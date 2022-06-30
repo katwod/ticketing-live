@@ -1,0 +1,8 @@
+{
+    "scripts": {
+        "postinstall": "cd theme/static_src && npm install"
+    },
+    "cacheDirectories": [
+    "theme/static_src/node_modules"
+    ]
+}
