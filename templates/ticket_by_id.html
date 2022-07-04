@@ -84,13 +84,13 @@
           <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
             <dt class="text-sm font-medium text-gray-500">Contextual Information</dt>
             <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-              {% if ticket.context == None %}
+              {% if ticket.contextual_info == None %}
               N/A
               {% else %}
-              {{ticket.context}}
+              {{ticket.contextual_info}}
               {% endif %}
           </div>
-          {% if ticket.status == 'completed' %}
+          {% if ticket.status == 'Completed' %}
           <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
             <dt class="text-sm font-medium text-gray-500">Personal Notes</dt>
             <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{{ticket.notes}}</dd>
