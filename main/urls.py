@@ -15,14 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.views.static import serve
-from django.urls import re_path
-from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("ticketing.urls")),
     path("__reload__/", include("django_browser_reload.urls")),
     path('', include('django.contrib.auth.urls')),
-    re_path(r'^download/(?P<path>.*)$', serve,{'document_root':settings.MEDIA_ROOT}),
 ]
