@@ -43,7 +43,7 @@ class Ticket (models.Model):
     deadline = models.DateField(blank=False, null=False)
     created_on = models.DateField(auto_now_add=True)
 
-    files = models.FileField(blank=True, upload_to='media', null=True)
+    files = models.FileField(blank=True, null=True)
     notes = models.TextField(blank=True)
 
     class Meta:

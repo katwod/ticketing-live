@@ -24,7 +24,7 @@ class Migration(migrations.Migration):
                 ('contextual_info', models.TextField(blank=True)),
                 ('deadline', models.DateField()),
                 ('created_on', models.DateField(auto_now_add=True)),
-                ('files', models.FileField(blank=True, null=True, upload_to='media')),
+                ('files', models.FileField(blank=True, null=True)),
                 ('notes', models.TextField(blank=True)),
                 ('assigned_to', models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='assistant_DZ_user', to=settings.AUTH_USER_MODEL)),
                 ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='assistant_FR_user', to=settings.AUTH_USER_MODEL)),
