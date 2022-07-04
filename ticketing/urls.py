@@ -14,4 +14,4 @@ urlpatterns = [
     path("assistanteFR/newTicketCreate", views.newTicketCreation, name ="newTicket"),
     path('assistanteFR/filterTickets', views.filterTickets, name='ticketFiltered'),
     path("", views.downloadFile, name ="downloadFile"),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
